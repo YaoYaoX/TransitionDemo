@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yM8-b5-dd0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="92u-Q8-Rxl">
+            <objects>
+                <navigationController id="yM8-b5-dd0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m9t-vO-Gny">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="l6w-sU-VgE" kind="relationship" relationship="rootViewController" id="KQN-J6-69J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edt-8f-rGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="223"/>
+        </scene>
+        <!--main-->
+        <scene sceneID="OYE-0H-0dG">
+            <objects>
+                <viewController id="l6w-sU-VgE" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="00o-vW-iQT"/>
+                        <viewControllerLayoutGuide type="bottom" id="LBL-zR-z9I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vgQ-g6-cJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iml-Ip-qFv">
+                                <rect key="frame" x="240.5" y="144" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="oY7-c5-OCe"/>
+                                    <constraint firstAttribute="height" constant="40" id="yss-eC-cOS"/>
+                                </constraints>
+                                <state key="normal" title="Animation Test"/>
+                                <connections>
+                                    <action selector="animationTest:" destination="l6w-sU-VgE" eventType="touchUpInside" id="d7H-Gz-qKW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUC-JD-7a7">
+                                <rect key="frame" x="240" y="214" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2pB-5P-HAz"/>
+                                    <constraint firstAttribute="height" constant="50" id="dwL-AQ-dwc"/>
+                                </constraints>
+                                <state key="normal" title="Interactive Test"/>
+                                <connections>
+                                    <action selector="InteractiveTest:" destination="l6w-sU-VgE" eventType="touchUpInside" id="3NB-Dv-k8S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VUC-JD-7a7" firstAttribute="centerX" secondItem="vgQ-g6-cJ3" secondAttribute="centerX" id="Mzd-TE-j8q"/>
+                            <constraint firstItem="VUC-JD-7a7" firstAttribute="top" secondItem="iml-Ip-qFv" secondAttribute="bottom" constant="30" id="YvI-an-fLF"/>
+                            <constraint firstItem="iml-Ip-qFv" firstAttribute="top" secondItem="00o-vW-iQT" secondAttribute="bottom" constant="80" id="o09-U9-Squ"/>
+                            <constraint firstItem="iml-Ip-qFv" firstAttribute="centerX" secondItem="vgQ-g6-cJ3" secondAttribute="centerX" id="uxU-BR-e9n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="main" id="5mh-Rj-Dxk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prg-9F-mfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="238"/>
+        </scene>
+    </scenes>
+</document>

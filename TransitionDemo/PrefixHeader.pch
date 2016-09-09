@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  TransitionDemo
+//
+//  Created by YY on 16/7/5.
+//  Copyright © 2016年 YY. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Const.h"
+
+
+typedef NS_ENUM(NSUInteger, TransitionType) {
+    TransitionTypePush,
+    TransitionTypeModal,
+};
+
+#endif
+
+#endif
